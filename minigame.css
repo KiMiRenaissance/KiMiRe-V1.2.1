@@ -1,0 +1,132 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--cerah);
+    font-family: serif;
+}
+
+img {
+    width: 80%;
+}
+
+:root {
+    --gelap: #170b17;
+    --cerah: #fde2d7;
+    --cerah-semi: #e4b7b2;
+    --cerah-kegelap-gelapan: #855265;
+    --ungu-agak-gelap: #532c5b;
+    --ungu-gelap: #29174b;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    background-color: var(--cerah-kegelap-gelapan);
+    border: none;
+    margin-left: 1vh;
+    width: 15vh;
+    color: var(--cerah);
+    border-radius: 3px;
+    height: 120%;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    color: var(--cerah);
+    padding: 1vh;
+    height: 120%;
+    width: 80%;
+    border-radius: 3px;
+}
+
+.row {
+    position: relative;
+    width: 80%;
+    height: 120%;
+    background-color: var(--gelap);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.row::before {
+    content: '';
+    position: absolute;
+    width: 1000%;
+    height: 1000%;
+    background-image: conic-gradient( #29174b, #e4b7b2, #855265, #532c5b);
+    animation: rotateBorder 4s linear infinite;
+}
+
+.row::after {
+    content: '';
+    position: absolute;
+    background-color: var(--gelap);
+    inset: 5px;
+    border-radius: 3px;
+}
+
+#jawaban {
+    position: relative;
+    z-index: 10;
+    color: var(--cerah-semi);
+    font-family: sans-serif;
+    width: 100%;
+    padding-left: 10%;
+}
+
+@keyframes rotateBorder {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+#pertanyaan {
+    margin-bottom: 20px;
+    background-color: var(--cerah-semi);
+    padding: .5vh;
+    color: var(--gelap);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.container-footer {
+
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.footer {
+    background-color: var(--gelap);
+    color: var(--cerah-kegelap-gelapan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+
+.p-footer {
+    background-color: var(--gelap);
+}
