@@ -1,6 +1,6 @@
 const pertanyaan = document.getElementById("pertanyaan")
 const jawaban = document.getElementById("jawaban")
-
+const containerJawaban = document.getElementById("row")
 
 let init = 0
 
@@ -70,7 +70,7 @@ const tombol = document.getElementById('btnKirim');
 function finishing() {
     console.log({ userData: userData })
     pertanyaan.innerHTML = `Kalau begitu ayo ikut denganku ${userData[0]}.`;
-    jawaban.style.display = 'none';
+    containerJawaban.style.display = 'none';
     btnKirim.innerHTML = 'ikuti dia';
     userData.push(jawaban.value)
     jawaban.value = "yangPentingAda"
