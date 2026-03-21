@@ -14,15 +14,17 @@
             
             <div class="container">
                 <div class="wrapper">
-                    <div style="margin-bottom: 1vh;">
+                    <div class="container-karakter">
                         <img id="karakter" src="ngapainjugadiklik.gif" alt="animation" />
                     </div>
-                    <p id="pertanyaan"></p>
-                    <div style="display: flex; justify-content: center;">
-                        <div class="row">
+                    <div class="container-pertanyaan">
+                        <p id="pertanyaan"></p>
+                    </div>
+                    <div class="menjawab">
+                        <div id="row">
                             <input id="jawaban" placeholder="jawab dia di sini!"/>
                         </div>
-                        <div>
+                        <div class="container-button">
                             <button id="btnKirim" onclick="botStart()" class="animate__animated animate__pulse animate__infinite animate__slow">send</button>
                         </div>
                     </div>
