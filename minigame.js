@@ -34,12 +34,12 @@ function botStart() {
     } else if (init === 2) {
         botDelay({ canggung: jawaban.value })
             setTimeout(() => {
-                containerJawaban.style.display = 'block';
-                jawaban.placeholder = "tulis saranmu di sini!";
+                containerJawaban.style.display = 'none';
                 userData.push(jawaban.value)
                 jawaban.value = "Mungkin kegiatan menyenangkan seperti, menggambar."
-                btnKirim.innerHTML = 'send';
-                btnKirim.style.fontSize = "1.4vh"
+                btnKirim.innerHTML = 'Mungkin kegiatan menyenangkan seperti, menggambar.';
+                btnKirim.style.fontSize = ".6vh"
+                btnKirim.style.width = "8vh"
             }, [1750])
     } else if (init === 3) {
         botDelay({ nyocot: jawaban.value })
