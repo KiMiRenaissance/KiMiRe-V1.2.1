@@ -8,7 +8,7 @@ const botSay = (data) => {
     return [
         "Jadi, siapa namamu?",
         `wahh halo ${data?.nama}☺️! Itu nama yang keren. apa kamu senang jika ada orang yang memanggilmu dengan nama itu?`,
-        `Hehehe... kamu tahu? aku selalu iri mengetahui manusia bisa bebas berekspresi, sedangkan aku hanya program yang dirangcang oleh mereka. apa kamu tahu apa yang bisa menghiburku?`,
+        `Hehehe... kamu tahu? aku selalu iri mengetahui manusia bisa bebas berekspresi, sedangkan aku hanya program yang dirangcang oleh mereka. Menurutmu apa yang bisa menghiburku?`,
         `aku rasa menggambar menyenangkan tapi... ayo kita bermain game. bukankah game opsi yang terbaik untuk meninggalkan pekerjaan kita?`,
         `Ah bercanda, pekerjaan merupakan hal wajib untuk kita yang sedang di usia produktif, jadi gimana kita akan bermain game? Apakah di usiamu saat ini masih layak untuk main game? Berapa usiamu sekarang?`,
         `aku rasa usia ${data?.usia} tidak begitu buruk. 😉`,
