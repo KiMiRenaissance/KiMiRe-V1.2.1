@@ -1,0 +1,126 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--gelap);
+    font-family: serif;
+}
+
+:root {
+    --gelap: #170b17;
+    --cerah: #fde2d7;
+    --cerah-semi: #e4b7b2;
+    --cerah-kegelap-gelapan: #855265;
+    --ungu-agak-gelap: #532c5b;
+    --ungu-gelap: #29174b;
+}
+
+.container-navbar {
+    
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gelap);
+    height: 6%;
+}
+
+.brand {
+    color: var(--cerah-semi);
+    display: flex;
+    margin-left: 1vh;
+    font-family: serif;
+    background-color: var(--gelap);
+}
+
+.firstname {
+    margin-right: .5vh;
+    color: var(--cerah-kegelap-gelapan);
+    background-color: var(--gelap);
+    margin-top: .5vh;
+    font-size: 3vh;
+}
+
+.lastname {
+    margin-left: .5vh;
+    color: var(--cerah-kegelap-gelapan);
+    background-color: var(--gelap);
+    margin-top: 1vh;
+    font-size: 3vh;
+}
+
+.subjudul {
+    margin-left: .5vh;
+    color: var(--cerah);
+    background-color: var(--gelap);
+    font-size: 1vh;
+    margin-top: 1vh;
+}
+
+.opsi {
+    background-color: var(--gelap);
+    color: var(--cerah-semi);
+}
+
+.ul-navbar {
+    list-style-type: none;
+    background-color: var(--cerah-semi);
+    border-radius: .5vh;
+    margin-right: 1vh;
+    height: 3vh;
+    width: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    background-color: var(--cerah-semi);
+}
+
+.a-navbar {
+    display: flex;
+    color: var(--gelap);
+    text-decoration: none;
+    margin-right: 1vh;
+    font-size: 2vh;
+    background-color: var(--cerah-semi);
+    border: none;
+}
+
+.container-content {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cerah);
+}
+
+.p-content-0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    color: var(--cerah-semi);
+    background-color: var(--gelap);
+    height: 3vh;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.container-footer {
+    margin-top: 2vh;
+    width: 100%;
+    height: 4%;
+    background-color: var(--gelap);
+}
+
+.footer {
+    background-color: var(--gelap);
+    color: var(--cerah-kegelap-gelapan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
