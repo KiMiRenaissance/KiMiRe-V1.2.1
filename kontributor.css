@@ -39,7 +39,7 @@
     color: var(--cerah-kegelap-gelapan);
     background-color: var(--gelap);
     margin-top: .5vh;
-    font-size: 3vh;
+    font-size: 2.8vh;
 }
 
 .lastname {
@@ -55,7 +55,7 @@
     color: var(--cerah);
     background-color: var(--gelap);
     font-size: 1vh;
-    margin-top: 1vh;
+    margin-top: .5vh;
 }
 
 .opsi {

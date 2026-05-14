@@ -1,17 +1,24 @@
 <html>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <head>
-    
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="shortcut icon" href="./icon.jpg" type="img/x-icon" />
         <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="style.css" title="mainstyle" />
+        <link rel="stylesheet" href="style.css" />
         <title>KiMi Renaissance Website</title>
         
     </head>
         
         <div class="fcontainer">
+            
+            <div id="unduhDiManaAkuMelangkah" style="display: none;">
+                <div id="list-unduh-DMAM">
+                    <button id="apkpure">Apkpure</button>
+                    <button id="itchio">Itch.io</button>
+                </div>
+                <button id="batalUnduhDiManaAkuMelangkah">batal</button>
+            </div>
             
             <!-- <navbar> -->
             
@@ -35,7 +42,7 @@
                 
                 <div class="main-content">
                     <div class="menu">
-                        <center class="text">Selamat datang di websiteku. Panggil aku Milano, pemilik akun KiMi Renaissance. Opsi di bawah ini sebagai pendekatan kita</center>
+                        <center class="text">Rizki Milano</center>
                         <div class="kol">
                             <div class="kolom">
                                 <button id="a-content-hobi">hobi</button>
@@ -44,8 +51,8 @@
                         </div>
                     </div>
                     <div class="content">
-                    <div class="div-img-menu">
-                        <img class="icon" src="img.png" alt="icon" />
+                    <div class="div-img-menu" style="display: flex;">
+                        <img class="icon" src="img.png" alt="icon" oncontextmenu="return false;"/>
                         <img src="bg-paralax.png" alt="adalah pokoknya" class="img-menu" oncontextmenu="return false;"/>
                         <img src="bg-paralax-2.png" alt="adalah pokoknya" class="img-menu-2" oncontextmenu="return false;"/>
                     </div>
@@ -111,22 +118,35 @@
                 <div class="bar-content">
                     <center>
                         <h3 class="judul animate__animated animate__zoomIn">Bilah Sisi Konten</h3>
-                        <h4 class="subjudul animate__animated animate__fadeInBottomRight">WHO?</h4>
-                        <button id="download">Download</button>
-                        <button id="infowho">Info</button>
-                        <button id="kontributorwho">Kontributor</button>
-                        <h4 class="subjudul animate__animated animate__fadeInBottomRight">メンタル Refusal</h4>
-                        <button id="info">Info</button>
-                        <button id="karakter">Karakter</button>
-                        <button id="kontributorrefusal">Kontributor</button>
-                        <h4 class="subjudul animate__animated animate__fadeInBottomRight">Narahubung</h4>
-                        <button id="youtube" style="color: red;">YouTube</button>
-                        <button id="facebook" >Facebook</button>
-                        <button id="tiktok" >TikTok</button>
-                        <h4 class="subjudul animate__animated animate__fadeInBottomRight">Dukung</h4>
-                        <p class="p-menu animate__animated animate__fadeIn">(untuk melanjutkanku bersekolah ke SMK beberapa bulan lagi)</p>
-                        <button id="sociabuzz" >SociaBuzz</button>
-                        <button id="trakteer" >Trakteer</button>
+                        <h4 class="subjudul animate__animated animate__fadeInBottomRight" id="diManaAkuMelangkah">Di Mana Aku Melangkah?</h4>
+                        <div id="diManaAkuMelangkahBar" style="display: block;">
+                            <button id="downloadDiManaAkuMelangkah">Download</button>
+                            <button id="infoDiManaAkuMelangkah">Info</button>
+                            <button id="kontributorDiManaAkuMelangkah">Kontributor</button>
+                        </div>
+                        <h4 class="subjudul animate__animated animate__fadeInBottomRight" id="who"style="display: none;">WHO?</h4>
+                        <div id="whoBar" style="display: none;">
+                            <button id="download">Download</button>
+                            <button id="infowho">Info</button>
+                            <button id="kontributorwho">Kontributor</button>
+                        </div>
+                        <h4 class="subjudul animate__animated animate__fadeInBottomRight" id="refusal">メンタル Refusal</h4>
+                        <div id="refusalBar" style="display: block;">
+                            <button id="info">Info</button>
+                            <button id="karakter">Karakter</button>
+                            <button id="kontributorrefusal">Kontributor</button>
+                        </div>
+                        <h4 class="subjudul animate__animated animate__fadeInBottomRight" id="narahubung">Narahubung</h4>
+                        <div id="narahubungBar" style="display: block;">
+                            <button id="youtube" style="color: red;">YouTube</button>
+                            <button id="facebook" >Facebook</button>
+                            <button id="tiktok" >TikTok</button>
+                        </div>
+                        <h4 class="subjudul animate__animated animate__fadeInBottomRight" id="dukung">Dukung</h4>
+                        <div id="dukungBar" style="display: block;">
+                            <button id="sociabuzz" >SociaBuzz</button>
+                            <button id="trakteer" >Trakteer</button>
+                        </div>
                     </center>
                 </div>
                 

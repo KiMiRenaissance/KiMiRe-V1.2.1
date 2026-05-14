@@ -22,9 +22,62 @@ html {
     width: 100%;
 }
 
+#unduhDiManaAkuMelangkah {
+    background-color: #29174b90;
+    border: 3px solid var(--gelap);
+    border-radius: 8px;
+    position: fixed;
+    height: 80vh;
+    width: 90vw;
+    left: 5vw;
+    top: 10vh;
+    z-index: 1000;
+}
+
+#list-unduh-DMAM {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 3vh;
+}
+
+#apkpure {
+    font-size: 2.3vh;
+    padding: 4px auto;
+    width: 75vw;
+    border: 3px solid green;
+    background-color: transparent;
+    color: green;
+    border-radius: 5px;
+}
+
+#itchio {
+    font-size: 2.3vh;
+    padding: 4px auto;
+    width: 75vw;
+    border: 3px solid red;
+    background-color: transparent;
+    color: red;
+    border-radius: 5px;
+}
+
+#batalUnduhDiManaAkuMelangkah {
+    position: absolute;
+    bottom: 6;
+    left: 6;
+    padding: 0 10;
+    background-color: var(--cerah-kegelap-gelapan);
+    border: 3px solid var(--gelap);
+    border-radius: 3px;
+    font-size: 1.8vh;
+}
+
 .container-navbar {
     width: 100%;
     height: 6vh;
+    z-index: 1000;
 }
 
 .wrapper {
@@ -32,12 +85,14 @@ html {
     position: fixed;
     width: 100%;
     height: 6vh;
+    z-index: 1001;
 }
 
 .name {
     color: var(--cerah-kegelap-gelapan);
     margin-left: 1vh;
     font-size: 5vh;
+    z-index: 1002;
 }
 
 .container-content {
@@ -53,6 +108,7 @@ html {
 
 .menu {
     background-color: var(--gelap);
+    z-index: 9999;
 }
 
 .text {
@@ -64,6 +120,7 @@ html {
     margin-bottom: 2vh;
     width: 94%;
     margin-left: 3%;
+    z-index: 7957977;
 }
 
 .kol {
@@ -72,6 +129,7 @@ html {
     align-items: center;
     width:100%;
     border-radius: 1vh;
+    z-index: 747;
 }
 
 .kolom {
@@ -94,9 +152,10 @@ html {
     margin-bottom: 1vh;
     border-radius: 3px;
     border: none;
+    z-index: 100;
 }
 
-#a-content-hobi:hover, #a-content-rencana:hover {
+#a-content-hobi:active, #a-content-rencana:active {
     background-color: var(--cerah-kegelap-gelapan);
     display: flex;
     justify-content: center;
@@ -129,7 +188,7 @@ content {
     display: relative;
     position: fixed;
     width: 20%;
-    margin-left: 45%;
+    right: 35vw;
     z-index: 10;
 }
 
@@ -155,6 +214,7 @@ content {
     font-size: 2.5vh;
     display: flex;
     justify-content: center;
+    z-index: 200;
 }
 
 .judul-content-nothing {
@@ -162,7 +222,7 @@ content {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    height: 50vh;
 }
 
 .img-content {
@@ -195,6 +255,7 @@ content {
     width: 35%;
     height: 95vh;
     position: fixed;
+    overflow: auto;
 }
 
 .judul {
@@ -215,7 +276,7 @@ content {
     margin-top: 1.5vh;
 }
 
-#info, #karakter, #kontributorrefusal, #kontributorwho, #infowho, #download, #youtube, #facebook, #tiktok, #sociabuzz, #trakteer {
+#info, #downloadDiManaAkuMelangkah, #infoDiManaAkuMelangkah, #kontributorDiManaAkuMelangkah, #karakter, #kontributorrefusal, #kontributorwho, #infowho, #download, #youtube, #facebook, #tiktok, #sociabuzz, #trakteer {
     font-size: 1.6vh;
     display: flex;
     flex-direction: column;
@@ -240,20 +301,19 @@ content {
     display: flex;
 }
 
-#info:hover, #infowho:hover, #karakter:hover, #kontributorrefusal:hover, #kontributorwho:hover, #download:hover, #youtube:hover, #facebook:hover, #tiktok:hover, #sociabuzz:hover, #trakteer:hover {
+#info:hover, #downloadDiManaAkuMelangkah:hover, #infoDiManaAkuMelangkah:hover, #kontributorDiManaAkuMelangkah:hover, #infowho:hover, #karakter:hover, #kontributorrefusal:hover, #kontributorwho:hover, #download:hover, #youtube:hover, #facebook:hover, #tiktok:hover, #sociabuzz:hover, #trakteer:hover {
     font-size: 1.8vh;
     transition: .2s ease-in-out;
     transform: rotate(2deg);
     opacity: 60%;
-    cursor: pointer;
 }
 
 .container-footer {
-    margin-top: 2vh;
     width: 65%;
 }
 
 .footer {
+    padding: 6px;
     color: var(--cerah-kegelap-gelapan);
     display: flex;
     justify-content: center;
@@ -263,9 +323,15 @@ content {
 
 @media screen and (min-width: 1024px) {
     
+    .menu {
+        background-color: var(--gelap);
+        z-index: 9993252459;
+    }
+    
     .container-navbar {
         width: 100%;
         height: 6vh;
+        z-index: 1000;
     }
     
     .wrapper {
@@ -273,12 +339,14 @@ content {
         position: fixed;
         width: 100%;
         height: 6vh;
+        z-index: 1001;
     }
     
     .name {
         color: var(--cerah-kegelap-gelapan);
         margin-left: 1vh;
         font-size: 5vh;
+        z-index: 1002;
     }
     
     
@@ -291,6 +359,7 @@ content {
         margin-bottom: 2vh;
         width: 94%;
         margin-left: 3%;
+        z-index: 64357967;
     }
     
     #a-content-hobi, #a-content-rencana {
@@ -306,6 +375,7 @@ content {
         margin-bottom: 1vh;
         border-radius: 3px;
         border: none;
+        z-index: 100;
     }
     
     #a-content-hobi:hover, #a-content-rencana:hover {
@@ -326,8 +396,8 @@ content {
     .icon {
         display: relative;
         position: fixed;
-        width: 20%;
-        margin-left: 65%;
+        width: 10%;
+        right: 15vw;
         z-index: 10;
     }
     
@@ -339,6 +409,8 @@ content {
         display: block;
         width: 100%;
         height: auto;
+        margin-top: -85vh;
+        z-index: 2;
     }
     
     .main-content {
@@ -358,6 +430,179 @@ content {
     .judul-content {
         font-size: 125%;
         margin-left: 1vh;
+        z-index: 200;
+    }
+    
+    .img-content {
+        width: 50%;
+        height: auto;
+        margin-left: 5%;
+        border-radius: 10px;
+        margin-top: 5px;
+    }
+    
+    .p-content {
+        display: flex;
+        font-size: 75%;
+        margin-bottom: 1.5vh;
+        margin-left: 1vh;
+        width: 90%;
+    }
+    
+    .bar-content {
+        background-color: var(--ungu-gelap);
+        margin-left: 85%;
+        width: 15%;
+        height: cover;
+        position: fixed;
+    }
+    
+    .judul {
+        color: var(--cerah-semi);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 80.6%;
+        margin-top: 1vh;
+    }
+    
+    .subjudul {
+        color: var(--cerah-kegelap-gelapan);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 80.9%;
+        margin-top: 1.5vh;
+    }
+    
+    .opsi {
+        font-size: 80.6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: var(--cerah);
+        padding: .3vh;
+        cursor: pointer;
+    }
+    
+    .opsi:hover {
+        font-size: 100%;
+        transition: .2s ease-in-out;
+        transform: rotate(2deg);
+        opacity: 60%;
+    }
+    
+    .p-menu {
+        font-size: 60%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .container-navbar {
+        width: 100%;
+        height: 6vh;
+        z-index: 1000;
+    }
+    
+    .wrapper {
+        background-color: var(--gelap);
+        position: fixed;
+        width: 100%;
+        height: 6vh;
+        z-index: 1001;
+    }
+    
+    .name {
+        color: var(--cerah-kegelap-gelapan);
+        margin-left: 1vh;
+        font-size: 5vh;
+        z-index: 1002;
+    }
+    
+    
+    .text {
+        color: var(--cerah-semi);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 110%;
+        margin-bottom: 2vh;
+        width: 94%;
+        margin-left: 3%;
+        z-index: 6746954;
+    }
+    
+    #a-content-hobi, #a-content-rencana {
+        background-color: var(--cerah-kegelap-gelapan);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 90%;
+        text-decoration: none;
+        color: var(--cerah-semi);
+        height: 130%;
+        width: 40%;
+        margin-bottom: 1vh;
+        border-radius: 3px;
+        border: none;
+        z-index: 100;
+    }
+    
+    #a-content-hobi:hover, #a-content-rencana:hover {
+        background-color: var(--cerah-kegelap-gelapan);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100%;
+        text-decoration: none;
+        color: var(--cerah-semi);
+        height: 130%;
+        width: 40%;
+        margin-bottom: 1vh;
+        border-radius: 3px;
+        border: none;
+    }
+    
+    .icon {
+        display: relative;
+        position: fixed;
+        width: 10%;
+        right: 15vw;
+        z-index: 10;
+    }
+    
+    .img-menu {
+        display: none;
+    }
+    
+    .img-menu-2 {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 0vh;
+    }
+    
+    .main-content {
+        width: 85%;
+    }
+    
+    .hobi {
+        font-size: 180%;
+        flex-direction: row;
+    }
+    
+    .kategori {
+        font-size: 200%;
+        margin-left: 1vh;
+    }
+    
+    .judul-content {
+        font-size: 125%;
+        margin-left: 1vh;
+        z-index: 200;
     }
     
     .img-content {
